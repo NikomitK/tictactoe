@@ -241,7 +241,6 @@ public class Main implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		lol++;
 		double k = lol % 2;
-		System.out.println(lol);
 		Object obj = e.getSource();
 		if(k==0) {
 			c = "O";
@@ -260,11 +259,9 @@ public class Main implements ActionListener{
 		if(obj==eins) {
 			s = eins.getText();
 			a=s;
-			System.out.println(a);
 			if(s!="X"&&s!="O") {
 				eins.setText(c);
 				a=c;
-				System.out.println(a);
 				
 			}
 			else lol--;
@@ -273,11 +270,9 @@ public class Main implements ActionListener{
 		if(obj==zwei) {
 			s = zwei.getText();
 			b=s;
-			System.out.println(b);
 			if(s!="X"&&s!="O") {
 				zwei.setText(c);
 				b=c;
-				System.out.println(b);
 			}
 			else lol--;
 		}
@@ -285,11 +280,9 @@ public class Main implements ActionListener{
 		if(obj==drei) {
 			s = drei.getText();
 			l=s;
-			System.out.println(l);
 			if(s!="X"&&s!="O") {
 				drei.setText(c);
 				l=c;
-				System.out.println(l);
 			}
 			else lol--;
 		}
